@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+temp/
+*.tmp
+
+# Media files (can be large)
+*.wav
+*.mp3
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Model checkpoints (large files)
+*.pt
+*.pth
+*.bin
+*.ckpt
+
+# Data files
+*.json
+*.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
