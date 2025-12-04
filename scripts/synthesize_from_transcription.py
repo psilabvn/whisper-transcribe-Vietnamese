@@ -228,3 +228,5 @@ Examples:
 
 if __name__ == "__main__":
     main()
+
+# python scripts/synthesize_from_transcription.py temp/downloads/*/audio_transcription.json --ref_audio /home/psilab/F5-TTS-Vietnamese/original_voice_ref/tran_ha_linh/tran_ha_linh_trimmed.wav --ref_text "chửi tao học ngu đi. chả qua là tao không muốn đi học đại học thôi" --output temp/synthesized_tran_ha_linh.wav

@@ -513,7 +513,7 @@ Available models:
     model_path = args.model_path
     if not model_path and args.model == 'phowhisper':
         # Default PhoWhisper model path
-        default_path = "/home/psilab/models--vinai--PhoWhisper-medium/snapshots/55a7e3eb6c906de891f8f06a107754427dd3be79"
+        default_path = "/home/psilab/TRANSCRIBE-AUDIO-TO-TEXT-WHISPER/model/snapshots/55a7e3eb6c906de891f8f06a107754427dd3be79"
         if Path(default_path).exists():
             model_path = default_path
             if not args.quiet:

@@ -292,3 +292,5 @@ Examples:
 
 if __name__ == "__main__":
     main()
+
+# python3 scripts/download_youtube_video.py "https://www.youtube.com/watch?v=Ebvur9BzJEs" --output temp/downloads
