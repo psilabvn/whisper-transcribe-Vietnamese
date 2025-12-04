@@ -67,6 +67,13 @@ Mô hình sẽ được tự động tải về khi chạy lần đầu tiên. M
 ### 1. Chuyển đổi âm thanh thành văn bản
 
 #### Sử dụng script
+
+**Cách nhanh - Chạy 1 dòng:**
+```bash
+python scripts/transcribe_phowhisper.py "input/your_audio.wav"
+```
+
+**Cách đầy đủ với tham số:**
 ```bash
 python scripts/transcribe_phowhisper.py \
     --audio_path input/your_audio.wav \
@@ -87,6 +94,12 @@ python scripts/transcribe_phowhisper.py \
 
 ### 2. Tải video từ YouTube
 
+**Cách nhanh - Chạy 1 dòng:**
+```bash
+python scripts/download_youtube_video.py "https://youtube.com/watch?v=..."
+```
+
+**Cách đầy đủ với tham số:**
 ```bash
 python scripts/download_youtube_video.py \
     --url "https://youtube.com/watch?v=..." \
@@ -101,6 +114,13 @@ python scripts/download_youtube_video.py \
 ### 3. Xử lý video
 
 #### Điều chỉnh tốc độ video
+
+**Cách nhanh - Chạy 1 dòng:**
+```bash
+python scripts/adjust_speed_video.py video.mp4 output.mp4 1.5
+```
+
+**Cách đầy đủ với tham số:**
 ```bash
 python scripts/adjust_speed_video.py \
     --input video.mp4 \
@@ -109,6 +129,13 @@ python scripts/adjust_speed_video.py \
 ```
 
 #### Tổng hợp từ transcription
+
+**Cách nhanh - Chạy 1 dòng:**
+```bash
+python scripts/synthesize_from_transcription.py transcription.json
+```
+
+**Cách đầy đủ với tham số:**
 ```bash
 python scripts/synthesize_from_transcription.py \
     --transcription transcription.json \
@@ -130,6 +157,12 @@ API sẽ chạy tại `http://localhost:8000`
 
 **Endpoint chính:** `POST /transcribe`
 
+**Cách nhanh - Chạy 1 dòng:**
+```bash
+curl -F "file=@your_audio.wav" http://localhost:8000/transcribe
+```
+
+**Cách đầy đủ với headers:**
 ```bash
 curl -X POST "http://localhost:8000/transcribe" \
     -H "Content-Type: multipart/form-data" \
@@ -259,6 +292,14 @@ pip install -r requirements.txt
 ## 📝 Ví dụ sử dụng
 
 ### Ví dụ 1: Transcribe video YouTube
+
+**Cách nhanh - Chạy 2 dòng:**
+```bash
+python scripts/download_youtube_video.py "https://youtube.com/watch?v=..."
+python scripts/transcribe_phowhisper.py "temp/downloads/video.mp3"
+```
+
+**Cách đầy đủ với tham số:**
 ```bash
 # Bước 1: Tải video
 python scripts/download_youtube_video.py \

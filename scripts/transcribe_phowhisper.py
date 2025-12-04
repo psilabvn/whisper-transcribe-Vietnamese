@@ -566,4 +566,4 @@ Available models:
 if __name__ == "__main__":
     main()
 
-#cd /home/psilab/VidLipSyncVoice && python scripts/transcribe_phowhisper.py "temp/downloads/EQ1JUda3tYk_Cách sửa xe điện Vinfast Klara đơn giản _ EAC (PHẦ/audio.wav" --model phowhisper --output "temp/downloads/EQ1JUda3tYk_Cách sửa xe điện Vinfast Klara đơn giản _ EAC (PHẦ/audio_transcription_with_punctuation.json"
+#cd /home/psilab/VidLipSyncVoice && python scripts/transcribe_phowhisper.py "temp/downloads/sua_xe_vf/audio_transcription_with_punctuation.json"
